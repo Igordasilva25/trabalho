@@ -6,6 +6,12 @@
         <link href="css/css.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
+        <?php
+            session_start();
+            if(isset($_SESSION['ID'])){
+                echo '<script type="text/javascript"> location.href="FotosUsers.php" </script>';
+            }
+        ?>
         <header>
             <h1><a href="index.php">Natureza em movimento!</a></h1>
             <nav>
